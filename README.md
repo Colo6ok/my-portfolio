@@ -1,2 +1,2 @@
 # my-portfolio
-[portfolio-name.netlify.app](Demo)
+[Demo](portfolio-name.netlify.app)
