@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: transparent;
+  color: #0ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Airal", sans-serif;
+  // background: linear-gradient(to right, #396afc 45%, #2948ff);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}

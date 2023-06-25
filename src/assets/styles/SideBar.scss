@@ -1,0 +1,149 @@
+.active {
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  width: 100%;
+  border-start-start-radius: 40px;
+  border-end-start-radius: 40px;
+  padding: 10px;
+  box-shadow: 0 0 30px 0 #fff;
+}
+
+.active > .menu__pic {
+  fill: #00f;
+}
+
+.active > .menu__controller {
+  color: #00f;
+}
+
+.inactive {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  border-start-start-radius: 40px;
+  border-end-start-radius: 40px;
+
+  &:hover {
+    background: rgba(0, 255, 255, 0.3);
+  }
+}
+
+.menu {
+  width: 250px;
+  min-height: 100vh;
+  background: #00f;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 10px 0 0 25px;
+}
+
+.side-bar {
+  position: fixed;
+  z-index: 100;
+  user-select: none;
+}
+
+.menu__controller {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 10px;
+  margin: 0;
+  position: absolute;
+  top: 33%;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid #00f;
+    padding: 2px;
+    background: #00f;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: -5px;
+  }
+}
+
+.side-bar__logo {
+  cursor: pointer;
+}
+
+.side-bar__pic {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.close {
+  width: 90px;
+}
+
+.menu__title {
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  right: 15%;
+  transition: all 0.5s ease;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px #fff;
+}
+
+.scale-on {
+  transform: scale(1.1);
+}
+
+.scale-off {
+  transform: scale(0);
+  transition: all 0.2s ease;
+}
+
+.menu__list {
+  padding-left: 0;
+}
+
+.menu__item {
+  margin: 10px 0;
+  position: relative;
+}
+
+.menu__pic {
+  fill: blue;
+  transform: translateX(140px);
+  transition: all 0.3s ease;
+}
+
+.change-color {
+  fill: #fff;
+  transform: translateX(0);
+}
+
+.side-bar__pic {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  border-radius: 50%;
+  border: 2px solid #00f;
+  background: #fff;
+  transform: translateX(50%);
+}
+
+.rotate {
+  transform: rotate(180deg) translateX(-50%);
+}
+
+.rotate-img {
+  transform: rotate(180deg);
+  transition: all 0.4s ease;
+}
+
+.menu__box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  user-select: none;
+}
